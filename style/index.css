@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+h1{
+  text-align: center;
+  color: white;
+    
+}
+h3{
+    text-align: center;
+    padding: 24px;
+
+}
+.section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ddb5b5 ;
+  gap: 50px;
+
+ 
+
+}
+/* class to wrap sign in and up section */
+.user-info{
+
+    display: flex;
+    top: 0;
+    width: 600px;
+    overflow: hidden;
+}
+.sign-wraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+   width: 600px;
+   background-color: #FCDCDC;
+   border-radius: 50px;
+}
+.sign-up-wraper{
+    transition: transform ease 0.8s;
+    transform: translateX(0%);
+}
+.sign-up input{
+
+    width: 500px;
+    height: 50px;
+    border-radius: 12px;
+    margin: 12px 48px;
+}
+
+.sign-in-wraper{
+    transition: transform ease 0.8s;
+    transform: translateX(-100%);
+
+}
+.user-credential{
+    display: flex;
+ 
+}
+#user-name{
+    flex-wrap: wrap;
+    margin-right: 5px;
+   
+}
+#password{
+    margin-left: 5px;
+}
+.confirm-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    gap: 50px;
+    cursor: pointer;
+}
+.sign-up-btn{
+    padding: 12px 24px;
+    background-color: #ddb5b5 ;
+    border-radius: 12px;
+    border: none;
+    color: white;
+}
+.sign-in-btn{
+    border: none;
+    background-color: transparent;
+
+}
+.red-boder{
+    border-color: red;
+}
+
+/* Start media query section  */
+@media screen and (max-width:600px) {
+.user-info{
+    width: 400px;
+}
+.sign-up input{
+    width: 350px;
+    height: 50px;
+    border-radius: 12px;
+    margin: 12px 24px;
+}
+.sign-wraper{
+    width: 500px;
+}
+.user-credential{
+    display: grid;
+}
+#password{
+    margin-left: 24px;
+}
+    
+}
+@media screen and (max-width:400px) {
+    .user-info{
+        width: 300px;
+    }
+    .sign-up input{
+        width: 250px;
+        height: 50px;
+        border-radius: 12px;
+        margin: 12px 24px;
+    }
+    .sign-wraper{
+        width: 300px;
+    }
+    .user-credential{
+        display: grid;
+    }
+        
+    }

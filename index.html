@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+   
+<main class="section">
+     <h1>"Diary <br> Application"</h1>
+
+    <div class="user-info">
+        <!-- Start sign-up section -->
+    <div id="sign-up-section" class="sign-wraper ">
+        <h3>Sign Up</h3>
+        <form action="" class="sign-up">
+            <input type="email" name="" id="sign-up-email" placeholder="  Email">
+            <div class="user-credential">
+                <input type="text" name="" id="user-name" placeholder=" Username" required>
+                <input type="password" name="" id="password" placeholder=" Password" required>
+            </div>
+            <div class="confirm-btn confirm-btn-sign-up">
+                <div onclick="toSignUp()" class="sign-up-btn">Sing Up</div>
+                <div onclick="signInSection()" class="sign-in-btn"><u>Sign In</u></div>
+            </div>
+        </form>
+    </div>
+    <!-- End of sign-up section -->
+
+       <!--Start of sign-in section -->
+    <div id="sign-in-section" class="sign-wraper ">
+        <h3>Sign In</h3>
+        <form action="" class="sign-up sign-in">
+            <input type="text" placeholder=" Username" id="sign-in-username">
+            <input type="password" name="" id="sign-in-pwd" placeholder=" Password">
+            <div class="confirm-btn confirm-btn-sign-in">
+                <div onclick="toSignIn()" class="sign-up-btn">Sing In</div>
+                <div onclick="signUpSection()" class="sign-in-btn"><u>Sign Up</u></div>
+            </div>
+        </form>
+    </div>
+       <!-- End of sign-in section -->
+    </div>
+</main>
+
+
+    <script src="./script/index.js"></script>
+</body>
+</html>

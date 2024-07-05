@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./style/diary-list.css" />
+	</head>
+	<body>
+		<!-- Start header section -->
+		<header>
+            <nav>
+                <div class="theme-icon icon">
+                    <img src="./static/icon/theme.svg" alt="">
+                    <ul class="drop-down">
+                        <li>
+                            Default
+                        </li>
+                        <li>
+                            Sea
+                        </li>
+                        <li>
+                            Nature
+                        </li>
+                    </ul>
+                </div>
+                <div class="web-name">
+                    <span>
+                        "Diary <br>
+                        Appliction"
+                    </span>
+    
+                </div>  
+                <div class="logout-icon icon">
+                    <a href="index.html">
+                     <img src="./static/icon/logout-icon.svg" alt="">
+                    </a>
+               
+    
+                </div>
+            </nav>
+        </header>
+        <!-- End of header  -->
+
+        <main>
+            <!-- Start slogan section  -->
+            <section class="slogan-section ">
+                <div class="slogan-wraper">
+                    <div class="slogan">
+                        <p>
+                            Memory... is the diary that we all carry about with us. <br>
+                            <span>
+                                <a href="#">Oscar Wilde</a>
+                             </span>
+                            </p>
+                    </div>
+                    <div class="book-giphy">
+                        <iframe src="https://giphy.com/embed/ayQvQYv3ojt5e3SylR"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                    </div>
+                </div>
+
+            </section>
+              <!-- End of slogan section  -->
+
+              <!-- Start diary list section As one example before injection -->
+               <section class="diary-list-section">
+                <div class="diary-list-wraper">
+                    <div class="diary-list">
+                        <!-- Start diary box list -->
+                        <div class="diary-box">
+                            <div class="date">28/06/2024</div>
+                            <div class="title-section">
+                                <div class="title">
+                                    Hello Welcome to Web Application
+                                </div>
+                                <div class="list-icon">
+                                    <ul>
+                                        <li class="edit-icon">
+                                            <img src="./static/icon/edit-icon.svg" alt="" data-icon="edit" >
+                                        </li>
+                                        <li class="delete-icon">
+                                            <img src="./static/icon/delete-icon.svg" alt="" data-icon="delete">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of diary box list -->
+
+                         <!-- Mood emoji section -->
+                        <div class="mood">
+                            <span class="emoji"> 😃</span>
+                        </div>
+
+                          <!-- Start Read form of each diary section -->
+                        <section class="read-form hidden" >
+                            <div id="read-form" class="diary-info ">
+                                <p class="date">Date</p>
+                                <p>Title: <span id="title-info"></span></p>
+                                <p>Your Mood: <span id="mood-info"></span></p>
+                                <p>Your Diary:</p>
+                                <textarea name="" id="" >
+                                </textarea><br>
+                                <div class="btn">
+                                <input id="done" type="button" value="Done">
+                                </div>
+                            </div>
+                        </section> 
+                         <!-- End Read form of each diary section -->
+                    </div> 
+                </div>
+               </section>
+            <!-- End of diary list section -->
+
+              <!-- Start Creation of New diary form -->
+               <section  class="create-section edit-section hidden">
+                <form action="" id="create-form">
+                    <div class="title-date">
+                    <input type="text" name="" id="title" placeholder=" Title:">
+                    <input type="date" name="" id="date">
+                    </div>
+                    <div class="mood-selection">
+                        <select name="" id="select-mood" >
+                            <option value="default">Select Your Mood</option>
+                            <option value="reflective">Reflective</option>
+                            <option value="happy">Happy</option>
+                            <option value="sad">Sad</option>
+                            <option value="anxious">Anxious</option>
+                            <option value="angry">Angry</option>
+                            <option value="grateful">Grateful</option>
+                        </select>
+                    </div>
+                    <p class="your-diary">Your Diary:</p>
+                    <textarea name="" id="text-area">
+                    </textarea><br>
+                    <div class="btn">
+                    <input id="discard" type="button" value="Discard">
+                    <button><input id="add" type="button" value="Add"></button>
+                    <button><input id="save" type="button" value="Save" class="hidden"></button>
+                    </div>
+                </form>
+               </section>
+             <!-- End of Creation of New diary form -->
+               
+          <!-- Start New diary Button  section-->
+               <section class="new-diary-btn" >
+                <div id="new-diary" >
+                <p>new</p>
+                <div class="new-icon">
+                    <img src="./static/icon/new-tab-icon.svg" alt="">
+                </div>
+                </div>
+               </section>
+              <!-- End of New diary Button  section-->
+               
+               <!-- Overlay panel -->
+               <section class="overlay hidden">
+               </section>
+            </main>
+              <!-- Start footer -->
+               <footer >
+                <div class="footer-wraper ">
+                    <div class="name">
+                        <p >
+                            Raksmeysomaly
+                        </p>
+
+                    </div>
+                    <div class="contact">
+                        <div class="name">
+                            <p>
+                                contact:
+                            </p>
+                        </div>
+                        <div class="contact-icon">
+                            <div class="contact-info">
+                            <img class="mail-icon icon" src="./static/icon/mail-icon.svg" alt="">
+                            <span >raksmeysomalyek0076@gmail.com</span>
+                            </div>
+                            <div class="contact-info">
+                            <img class="facebook-icon icon" src="./static/icon/facebook-icon.svg" alt="">
+                            <span>"Diary Appliction"</span>
+                        </div>
+                        <div class="contact-info">
+                            <img class="linkin-icon icon" src="./static/icon/linkin-icon.png" alt="">
+                            <span>"Diary Appliction"</span>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+               </footer>
+               <!-- end of footer -->
+
+           
+     <script src="./script/diary-list.js"></script>
+	</body>
+</html>
